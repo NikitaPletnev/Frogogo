@@ -1,0 +1,556 @@
+
+html body{
+	margin:0;
+	padding:0;
+	font-family: "Calibri";
+}
+/*Задаю стили шапки страницы*/
+header{
+	height: 127px;
+	width: 100%;
+	background:#f9fafb;
+}
+
+.header_contaner{
+	width: 83%;
+	height: 100%;
+	margin:0 auto;
+}
+
+.select_contaner{
+	position: relative;
+	top:25px;
+	color: #8a93a3;
+}
+/*Стили селекта с городами*/
+.select_contaner select{
+	cursor: pointer;
+	margin-left: 5px;
+	color: #54dbc0;
+	font-weight: bold;
+	border:none;
+	outline: none;
+	width: 63px;
+	 -webkit-appearance: none;
+    background: url('img/selection_new.png') no-repeat right center !important; 
+    background-color: transparent !important;
+}
+
+.header_logo{
+	display: inline-block;
+	margin-top:45px;
+}
+
+.header_left{
+	display: flex;
+	float: right;
+	top:0;
+
+}
+
+.promocod{
+	cursor: pointer;
+	color: #ff8282;
+	font-weight: bolder;
+	margin-right: 25px;
+}
+
+.status{
+	cursor: pointer;
+	color:#ffa000;
+	font-weight: bolder;
+	margin-right: 30px;
+}
+
+.score{
+	color:#8a93a3;
+	font-weight: bold;
+}
+/*Стили селекта с суммой*/
+.score select{
+	cursor: pointer;
+	margin-left: 5px;
+	color: #54dbc0;
+	font-weight: bolder;
+	border:none;
+	outline: none;
+	width: 65px;
+    -webkit-appearance: none;
+    background: url('img/selection_new.png') no-repeat right center !important; 
+    background-color: transparent !important;
+}
+
+.header_menu{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+	left:300px;
+	top:-30px;
+}
+
+.header_menu_item{
+	cursor: pointer;
+	display: inline-block;
+	color:#8a93a3;
+	font-size: 18px;
+	margin-right: 
+}
+
+.basket{
+	width: 100px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	top:-60px;
+	color:#8a93a3;
+	font-weight: bold; 
+}
+
+.basket_img{
+	display: inline-block;
+	height: 27px;
+	width: 34px;
+	background:url("img/backet_3.png") no-repeat;
+}
+/*Стили основной части страницы*/
+main{
+	width: 54%;
+	height: 400px;
+	margin:0 auto;
+}
+
+.main_contaner{
+	margin:65px 0;
+}
+/*Стили заголовка*/
+.big_text{
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+	color: #34344f;
+}
+/*Стили кнопки очистки корзины*/
+.clear_backet{
+	margin-left: 30px;
+	display: inline-block;
+	color: #ff8282;
+	font-weight: bold;
+	font-size: 18px;
+}
+/*Стили элементов в корзине*/
+.main_items_contaner{
+	margin-top:65px;
+}
+
+.main_item{
+	height: 200px;
+	width: 100%;
+	border-top: 1px solid #eceff4;
+	border-bottom: 1px solid #eceff4;
+}
+
+.main_item_name{
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+.main_item_trashcan{
+    cursor: pointer;
+	display: inline-block;
+	float: right;
+	margin-top: 30px;
+	height: 20px;
+	width: 16px;
+	background:url("img/main_item_trashcan_noactive.png") no-repeat;
+}
+/*Изменение значка при наведении*/
+.main_item_trashcan:hover{
+	background:url("img/main_item_trashcan_active.png") no-repeat;
+}
+
+/*Фото товара*/
+.glass_logo{
+	position: relative;
+    top:70px;
+    left:-316px;
+}
+
+.coat_logo{
+	position: relative;
+    top:70px;
+    left:-190px;
+}
+
+.speaker_logo{
+    position: relative;
+    top:70px;
+    left:-390px;
+}
+
+.specs_logo{
+	position: relative;
+    top:70px;
+    left:-510px;
+}
+
+.gift_text{
+	position: relative;
+	top: 60px;
+	font-size: 14px;
+}
+
+.gift_text a{
+	text-decoration: none;
+	color:#ffa000;
+}
+
+.coat_size{
+	position: relative;
+	display: inline-block;
+	left:-180px;
+	top:-13px;
+	color:#8a93a3;
+}
+
+.coat_size img{
+	position: relative;
+	bottom:-4px;
+	margin-left: 5px;
+}
+
+.glass_color{
+	position: relative;
+	display: inline-block;
+	left:-300px;
+	top:-13px;
+	color:#8a93a3;
+}
+
+.glass_color img{
+	position: relative;
+	bottom:-4px;
+	margin-left: 5px;
+}
+/*Стили количества товаров*/
+.item_quantity{
+	width: 110px;
+	height: 30px;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+
+.minus{
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	width: 18px;
+	background:url("img/minus_noactive.png") no-repeat;
+	margin-right: 10px;
+}
+
+.minus:hover{
+	background:url("img/minus_active.png") no-repeat;
+}
+
+.numers{
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.plus{
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	width: 18px;
+	background:url("img/plus_noactive.png") no-repeat;
+	margin-left:10px;
+}
+
+.plus:hover{
+	background:url("img/plus_active.png") no-repeat;
+}
+/*Стили свойств товара*/
+.main_item_props{
+	position: relative;
+	top:-95px;
+	height: 0px;
+	display: flex;
+	flex-direction: column;
+	float: right;
+}
+
+.prop_text_1{
+ color:#8a93a3;
+ display: inline-block;
+ text-align: right;
+}
+
+.prop_text_1 h2{
+display: inline-block;
+margin-left: 10px;
+color: #1e1e3c;
+}
+
+.prop_text_2{
+color: #70e1cb;	
+position: relative;
+top:-35px;
+display: inline-block;
+text-align: right;
+}
+
+.prop_text_2 h2{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.prop_text_3{
+color: #70e1cb;	
+position: relative;
+top:-70px;
+display: inline-block;
+text-align: right;
+}
+
+.prop_text_3 h2{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/*Стили количств и сумм*/
+.all_gds_quantity{
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 60px;
+	color: #1e1e3c;
+}
+
+.all_gds_summ{	
+	float: right;
+	font-size: 16px;
+	margin-top: -25px;
+}
+
+.all_personal_account{
+    display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	color: #4ad9bd;
+	margin-top: 10px;
+    
+}
+
+.all_personal_account_summ{	
+	float: right;
+	font-size: 16px;
+	margin-top: -32px;
+}
+
+.slider_text{
+	margin-top: 20px;
+	width: 520px;
+	font-size: 20px;
+	color: #1e1e3c;
+}
+/*Стили слайдера*/
+input[type=range] {
+  -webkit-appearance: none; 
+  width: 100%; 
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Специальные правила для браузеров на движках WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 36px;
+  width: 36px;
+  border-radius: 30px;
+  background: url("img/slider.png") no-repeat;
+  cursor: pointer;
+  margin-top: 30px; 
+  z-index: 999;
+  position: relative;
+
+}
+
+/* Тоже самое для Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 36px;
+  width: 36px;
+  border-radius: 30px;
+  background: url("img/slider.png") no-repeat;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+}
+
+/* Тоже самое для IE */
+input[type=range]::-ms-thumb {
+  height: 36px;
+  width: 36px;
+  border-radius: 30px;
+  background: url("img/slider.png")no-repeat;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+}
+
+.slider_line{
+	width: 98%;
+	margin:auto;
+	height: 5px;
+	background-color: #eceff4;
+	border-radius: 3px;
+	position: relative;
+	top:-24px;
+}
+
+.fill_line{
+	background-color: #4ad9bd;
+	height: 100%;
+	border-radius: 3px;
+
+}
+
+.slider_num_1{
+	display: inline;
+	position: relative;
+	left:10px;
+	top: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	color:#c6cdd7;
+
+}
+
+.slider_num_2{
+	display: inline;
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	top: 30px;
+	color:#c6cdd7;
+}
+/*Стили нижнего блока с финальными пересчетами*/
+.final_contaner{
+	border:1px solid #eceff4;
+	height: 310px;
+	margin-top: 60px;
+}
+
+.final_mooving{
+	width: 85%;
+	height: 60px;
+	margin:30px auto;
+	border-bottom: 1px solid #eceff4;
+}
+
+.final_mooving_text{
+	display: inline;
+	font-size: 21px;
+	font-weight: bold;
+	color: #929aa9;
+}
+
+.final_mooving_price{
+	display: inline;
+	float: right;
+	font-size: 21px;
+	font-weight: bold;
+	color: #4ad9bd;
+}
+
+.all_final_contaner{
+	width: 85%;
+	height: 30px;
+	margin:10px auto;
+}
+
+.all_final_price{
+	font-size: 21px;
+	font-weight: bold;
+	color: #1e1e3c;
+	display: inline;
+}
+
+.all_final_price_num{
+	font-size: 21px;
+	font-weight: bold;
+	color: #1e1e3c;
+	display: inline;
+	float: right;
+}
+
+.gold_text{
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffa000;
+	display: inline;
+}
+
+.gold_num{
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffa000;
+	display: inline;
+	float: right;
+}
+
+.account_text{
+	font-size: 21px;
+	font-weight: bold;
+	color: #4ad9bd;
+	display: inline;
+}
+
+.account_num{
+	font-size: 21px;
+	font-weight: bold;
+	color: #4ad9bd;
+	display: inline;
+	float: right;
+}
+
+.submit{
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+	border:none;
+	outline: none;
+	background-color:#4ad9bd;
+	color:white; 
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+.gdsQuantity{
+	display: inline;
+}
+.gdsQuantity_text{
+	display: inline;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Frogogo</title>
+	<!-- Подключаю стили страницы -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Подключаю необходимую JS библиотеку -->
+	<script src="jquery-3.3.1.min.js"></script>
+	<!-- Подключаю логику страницы -->
+	<script src="main.js"></script>
+</head>
+<body>
+    <header>
+    	<!-- Основной контейнер шапки страницы -->
+    	<div class = header_contaner>
+    		<!-- Выбор городов -->
+    		<div class = select_contaner>
+    			<img src="img/selection_logo.png">&nbsp;Регион:
+    			  <select>
+    			  	<option>Москва</option>
+    			  	<option>Липецк</option>
+    			  </select>
+    		</div>
+    		<!-- Логотип компании -->
+    		<div class = header_logo>
+    			<a href="#"><img src="img/header_logo.png"></a>
+    		</div>
+    		<!-- Информация о промокоде , статусе и сумме -->
+    		<div class = header_left>
+    			<div class = promocod>
+    				<img src="img/promocod.png">Ввести промокод
+    			</div>
+    			<div class = status>
+    				<img src="img/status_icon.png">GOLD&nbsp;статус
+    			</div>
+    			<div class = score>Ваш счет
+                     <select>
+                     	<option><div class = "score_text_rub">4&nbsp;700</div>&nbsp;&#8381;</option>
+                     </select>
+    			</div>
+    		</div>
+    		<!-- Верхнее меню(я сделал его просто текстом,потому что не знал - надо ли и если надо то как раскрывать пункты) -->
+    		<div class = header_menu>
+    			<div class = header_menu_item>Категории
+                   <img src="img/category_select.png">
+    			</div>
+    			<div class = header_menu_item>Коллекции</div>
+    			<div class = header_menu_item>Вопрос&nbsp;/&nbsp;Ответ</div>
+    			<div class = header_menu_item>Как&nbsp;пополнить&nbsp;счет&nbsp;?</div>
+    			<div class = header_menu_item>Поддержка</div>
+    		</div>
+    		<!-- Корзина(она меняется в зависимости от количества товаров) -->
+    		<div class = basket>
+    			<div class = basket_img></div>Корзина
+    		</div>
+    	</div>
+    </header>
+    <main>
+    	<!-- Основной контейнер с товарами -->
+    	<div class = main_contaner>
+    		<div class = "big_text">Вот&nbsp;что&nbsp;в&nbsp;Вашей&nbsp;корзине</div>
+    		<a href = "#"><div class = "clear_backet">Очистить&nbsp;корзину</div></a>
+    		<!-- Товары -->
+    		    <div class = "main_items_contaner">
+    		    	<div class = "main_item">
+    		    		<div class = "main_item_name">Стакан YPSILON BRIO CAPPUCCINO 220 мл</div>
+    		    		<div class = "main_item_trashcan"></div>
+    		    		<img class = "glass_logo" src="img/glass_logo.jpg">
+    		    		<div class = "glass_color">Цвет&nbsp;
+                            <img src="img/glass_color.png">
+    		    		</div>
+    		    		<div class = "item_quantity">
+    		    			<div class = "minus"></div>
+    		    			<div class = "numers">2</div>
+    		    			<div class = "plus"></div>
+    		    		</div>
+    		    		<div class = "main_item_props">
+    		    			<div class = "prop_text_1">Полная цена <h2>3&nbsp;580&nbsp;&#8381;</h2></div>
+    		    			<div class = "prop_text_2">Можно оплатить с личного счета<h2>2&nbsp;000&nbsp;&#8381;</h2></div>
+    		    			<div class = "prop_text_3">Минимально к оплате с личного счета<h2>2&nbsp;000&nbsp;&#8381;</h2></div>
+    		    		</div>
+    		    	</div>
+    		    	<div class = "main_item">
+    		    		<div class = "main_item_name">Одеяло Woolfield Sunrise</div>
+    		    		<div class = "main_item_trashcan"></div>
+    		    		<img class = "coat_logo" src="img/coat_logo.jpg">
+    		    		<div class = "coat_size">Размер&nbsp;
+                            <img src="img/coat_size.png">
+    		    		</div>
+    		    		<div class = "item_quantity">
+    		    			<div class = "minus"></div>
+    		    			<div class = "numers">1</div>
+    		    			<div class = "plus"></div>
+    		    		</div>
+    		    		<div class = "main_item_props">
+    		    			<div class = "prop_text_1">Полная цена <h2>2&nbsp;000&nbsp;&#8381;</h2></div>
+    		    			<div class = "prop_text_2">Можно оплатить с личного счета<h2>1&nbsp;000&nbsp;&#8381;</h2></div>
+    		    		</div>
+    		    	</div>
+    		    	<div class = "main_item">
+    		    		<div class = "main_item_name">Беспроводная колонка Goodyear Bluetooth Speaker</div>
+    		    		<div class = "main_item_trashcan"></div>
+    		    		<img class = "speaker_logo" src="img/speaker_logo.jpg">
+    		    		<div class = "item_quantity">
+    		    			<div class = "minus"></div>
+    		    			<div class = "numers">1</div>
+    		    			<div class = "plus"></div>
+    		    		</div>
+    		    		<div class = "main_item_props">
+    		    			<div class = "prop_text_1">Полная цена <h2>2&nbsp;000&nbsp;&#8381;</h2></div>
+    		    			<div class = "prop_text_2">Можно оплатить с личного счета<h2>1&nbsp;000&nbsp;&#8381;</h2></div>
+    		    		</div>
+    		    	</div>
+    		    	<div class = "main_item">
+    		    		<div class = "main_item_name">Очки солнцезащитные спортивные антибликовые с поляризацией</div>
+    		    		<div class = "main_item_trashcan"></div>
+    		    		<img class = "specs_logo" src="img/specs_logo.jpg">
+    		    		<div class = "main_item_props">
+    		    			<div class = "gift_text"><h2>Подарок от <img src="img/status_icon_2.png"><a href = "#">GOLD статуса</a></h2></div>
+    		    		</div>
+    		    	</div>
+    		    </div>
+    		    <!-- Подсчет скидки с помощью слайдера -->
+    		    <div class = "all_gds_calc_contaner">
+    		    	<div class = "all_gds_quantity"><div class = "gdsQuantity">0</div> <div class = "gdsQuantity_text"> товара</div> на сумму<div class = "all_gds_summ"><h2>10&nbsp;580&nbsp;&#8381;</h2></div></div>
+    		    	<div class = "all_personal_account">Используется рублей с личного счета<div class = "all_personal_account_summ"></div></div>
+    		    	<div class = "slider_text">Передвигая лягушку,выберите сколько рублей с&nbsp;личного счета вы&nbsp;хотите потратить</div>
+    		    	<div class = "slider_num_1">0&#8381;</div><div class = "slider_num_2"></div>
+    		    	<input class = "range" type="range" name="range" min="0" max="1000" value="0">
+    		    	<div class = "slider_line"><div class = "fill_line"></div></div>
+    		    </div>
+    		   <!--  Финальный пересчет стоимости с учетом скидок -->
+    		    <div class = "final_contaner">
+    		    	<div class = "final_mooving">
+    		    		<div class = "final_mooving_text">Доставка</div>
+    		    		<div class = "final_mooving_price">Бесплатно</div>
+    		    	</div>
+                    <div class = "all_final_contaner">
+    		    	       <div class = "all_final_price">Итоговая стоимость</div><div class = "all_final_price_num">0000</div>
+    		    	</div> 
+    		    	<div class = "all_final_contaner">
+    		    		<div class = "gold_text">+ 20% на личный счет от <img src="img/status_icon_2.png"> GOLD статуса</div><div class="gold_num">0000</div>
+    		    	</div> 
+    		    	<div class = "all_final_contaner">
+    		    		<div class = "account_text">На личный счет вернется</div><div class="account_num">0000</div>
+    		    	</div> 
+    		    	<button class = "submit">ПЕРЕЙТИ К ОФОРМЛЕНИЮ ЗАКАЗА</button>      
+    		    </div>
+    	</div>
+    </main>
+</body>
+</html>
